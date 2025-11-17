@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://bv5qcv3iu8pu"]
+
+[ext_resource type="Script" path="res://world/generate_map.gd" id="1_07b08"]
+[ext_resource type="MeshLibrary" uid="uid://b4hfeg55chn40" path="res://world_mesh.tres" id="2_422ue"]
+[ext_resource type="PackedScene" uid="uid://c2bva4s0jdfqk" path="res://cat_001.tscn" id="3_6t3gf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pv3rl"]
+size = Vector3(300, 1, 300)
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_07b08")
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource("2_422ue")
+cell_size = Vector3(32, 20, 32)
+cell_octant_size = 10
+cell_center_x = false
+cell_center_y = false
+cell_center_z = false
+data = {
+"cells": PackedInt32Array(65535, 3, 14, 65535, 2, 13, 65535, 1, 13, 65535, 0, 13, 4, 0, 15, 4, 1, 15, 4, 2, 15, 4, 3, 16)
+}
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("3_6t3gf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.0865, 6.41886, 84.3822)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_pv3rl")

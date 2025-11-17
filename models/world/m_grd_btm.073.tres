@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://c2y8403a2y3va"]
+
+[ext_resource type="Texture2D" uid="uid://7xbtlvusqm3q" path="res://models/world/c_grd_d1_1_grd_btm.png" id="1_fh4y0"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vudm0"]
+
+[resource]
+resource_name = "m_grd_btm.073"
+next_pass = SubResource("ShaderMaterial_vudm0")
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_fh4y0")
+texture_filter = 2
+texture_repeat = false

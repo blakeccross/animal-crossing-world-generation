@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://d2xutrykr73uu"]
+
+[ext_resource type="Texture2D" uid="uid://b8mu7akjupx61" path="res://models/world/c_grd_d1_1_grd_soi.png" id="1_gsb8p"]
+
+[resource]
+resource_name = "m_grd_soi.076"
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_gsb8p")
+texture_filter = 2

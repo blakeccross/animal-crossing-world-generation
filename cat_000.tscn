@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://o4nubja1t0g5"]
+
+[ext_resource type="PackedScene" uid="uid://c8sdxkfhe8fx" path="res://models/npc/cat00.glb" id="1_iul6e"]
+[ext_resource type="Script" path="res://cat_000.gd" id="2_0x4pw"]
+
+[node name="cat002" instance=ExtResource("1_iul6e")]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." index="0"]
+motion_mode = 1
+script = ExtResource("2_0x4pw")
+
+[node name="Skeleton3D" parent="cat00" index="0"]
+bones/1/position = Vector3(3.37022e-08, 0.591308, -2.37949e-08)
+bones/1/rotation = Quaternion(-0.0189105, -0.0189104, 0.706854, 0.706854)
+bones/2/position = Vector3(-0.123047, -6.94025e-09, 3.83592e-08)
+bones/2/rotation = Quaternion(0.0471763, 0.00926778, -0.000427718, 0.998843)
+bones/3/position = Vector3(0.132568, 3.55271e-15, 6.66232e-08)
+bones/3/rotation = Quaternion(-0.0166034, -1.93749e-10, -2.44547e-29, 0.999862)
+bones/4/position = Vector3(0.0817871, -0.151123, 0.015625)
+bones/4/rotation = Quaternion(0.151948, 0.0708591, -0.893486, 0.416623)
+bones/4/scale = Vector3(1, 1, 1)
+bones/5/position = Vector3(0.161377, 4.44296e-09, 2.48178e-09)
+bones/5/rotation = Quaternion(-2.08445e-09, -0.0821839, 5.97754e-09, 0.996617)
+bones/6/position = Vector3(0.081787, 0.151123, 0.015625)
+bones/6/rotation = Quaternion(0.0652188, -0.0304142, 0.903968, 0.421501)
+bones/6/scale = Vector3(1, 1, 1)
+bones/7/position = Vector3(0.166016, -0.00219733, 9.5147e-10)
+bones/7/rotation = Quaternion(7.80736e-09, -0.382663, 4.33284e-09, 0.923888)
+bones/8/position = Vector3(-5.17823e-08, 0.195557, -1.47494e-14)
+bones/8/rotation = Quaternion(0.0548517, 0.0720275, 0.99567, 0.0210863)
+bones/9/position = Vector3(0.265869, 1.70763e-08, 1.20313e-09)
+bones/9/rotation = Quaternion(-1.5503e-08, 0.573572, 2.79662e-08, 0.819155)
+bones/10/position = Vector3(5.17823e-08, -0.195557, 7.64398e-15)
+bones/10/rotation = Quaternion(0.035227, -0.106024, 0.993683, 0.0106261)
+bones/11/position = Vector3(0.265869, 3.01148e-08, -2.52216e-09)
+bones/11/rotation = Quaternion(3.14322e-09, 3.21098e-08, 3.28665e-08, 1)
+bones/12/position = Vector3(-0.113037, -9.34433e-09, 0.0729979)
+bones/12/rotation = Quaternion(-2.12855e-08, 0.672738, 2.36401e-08, 0.739881)
+bones/12/scale = Vector3(1, 1, 1)
+bones/13/position = Vector3(-0.0168458, -8.67903e-15, 1.04236e-08)
+bones/13/rotation = Quaternion(1.17198e-09, -0.131898, -4.20708e-10, 0.991263)
+
+[node name="Camera3D" type="Camera3D" parent="." index="3"]
+transform = Transform3D(1, 0, 0, 0, 0.967099, 0.254399, 0, -0.254399, 0.967099, 0, 2.33452, 3.94397)
+current = true
